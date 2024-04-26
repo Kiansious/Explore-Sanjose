@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Explore Sanjose-Home</title>
+	<link rel="icon" type="image/x-icon" href="Pictures/LOGO.png">
+	<link rel="stylesheet" type="text/css" href="HomePage2.css">
+	<script type="text/javascript">
+		/*image switch on the homepage*/
+		function change1(){
+			clearBoxShadow();
+			/*this script sets the delay for when i click on the other images on the contents, it will delay the onlick function for 100millesconds im not sure hehe*/
+			setTimeout(() => {
+			document.getElementById("currentdisplay").style.backgroundImage = "url(Pictures/aromabeach.jpg)";
+			/*indicatescurrentpicture in display with shadow style*/
+			document.getElementById("aromapicture").style.boxShadow = "0px 5px 15px rgba(0, 0, 0, 1.25)";
+			document.getElementById("devmountainpicture").style.boxShadow = "0px 0px 0px rgba(0, 0, 0, 0)";
+			document.getElementById("whiteislandpicture").style.boxShadow = "0px 0px 0px rgba(0, 0, 0, 0)";
+			document.getElementById("mangyanpicture").style.boxShadow = "0px 5px 15px rgba(0, 0, 0, 0)";
+			}, 100);
+			document.getElementById("ContentText").innerHTML = "Aroma Beach is a peaceful spot with soft sand, clear water, and a fresh ocean breeze.<br> Relax as gentle waves meet the shore and enjoy the delightful scent of the sea mixed with tropical flowers. <br>It's the perfect place to unwind and escape the daily grind especially when the sun is setting.";
+		}
+		function change2(){
+			setTimeout(() => {
+			document.getElementById("currentdisplay").style.backgroundImage = "url(Pictures/devilsmountain.jpg)";
+			document.getElementById("devmountainpicture").style.boxShadow = "0px 5px 15px rgba(0, 0, 0, 1.25)";
+			document.getElementById("aromapicture").style.boxShadow = "0px 0px 0px rgba(0, 0, 0, 0)";
+			document.getElementById("whiteislandpicture").style.boxShadow = "0px 0px 0px rgba(0, 0, 0, 0)";
+			document.getElementById("mangyanpicture").style.boxShadow = "0px 5px 15px rgba(0, 0, 0, 0)";
+			}, 100);
+			document.getElementById("ContentText").innerHTML = "Devil's Mountain in San Jose, Mindoro, Philippines, is a stunning destination for nature lovers.<br> With its towering peak, lush forests, and scenic views, it's perfect for hiking and exploring.<br> Experience the beauty of the outdoors and take in the breathtaking scenery of this remarkable mountain.";
+			
+		}
+		function change3(){
+			setTimeout(() => {
+			document.getElementById("currentdisplay").style.backgroundImage = "url(Pictures/whiteisland.jpg)";
+			document.getElementById("whiteislandpicture").style.boxShadow = "0px 5px 15px rgba(0, 0, 0, 1.25)";
+			document.getElementById("devmountainpicture").style.boxShadow = "0px 0px 0px rgba(0, 0, 0, 0)";
+			document.getElementById("aromapicture").style.boxShadow = "0px 0px 0px rgba(0, 0, 0, 0)";
+			document.getElementById("mangyanpicture").style.boxShadow = "0px 5px 15px rgba(0, 0, 0, 0)";
+			}, 100);
+			document.getElementById("ContentText").innerHTML = "White Island, located in San Jose, Mindoro, Philippines, is a beautiful destination known for its pristine <br>white sand beaches and clear blue waters. It's a perfect spot for relaxation and enjoying the natural beauty of the island.";
+
+		}
+		function change4(){
+			setTimeout(() => {
+			document.getElementById("currentdisplay").style.backgroundImage = "url(Pictures/mangyan.jpg)";
+			document.getElementById("mangyanpicture").style.boxShadow = "0px 5px 15px rgba(0, 0, 0, 1.25)";
+			document.getElementById("whiteislandpicture").style.boxShadow = "0px 0px 0px rgba(0, 0, 0, 0)";
+			document.getElementById("devmountainpicture").style.boxShadow = "0px 0px 0px rgba(0, 0, 0, 0)";
+			document.getElementById("aromapicture").style.boxShadow = "0px 0px 0px rgba(0, 0, 0, 0)";
+			}, 100);
+			document.getElementById("ContentText").innerHTML = "The Mangyan are a native group in the Philippines, particularly in Mindoro. <br>They have a rich culture and traditions, including weaving and music, and live closely connected to the land. <br>Despite modern challenges, they maintain their unique identity and contribute to Filipino culture.";
+
+		}
+		function change5(){
+			setTimeout(() => {
+			document.getElementById("currentdisplay").style.backgroundImage = "url(Pictures/naibuan.jpg)";
+			document.getElementById("naibuanpicture").style.boxShadow = "0px 5px 15px rgba(0, 0, 0, 1.25)";
+			document.getElementById("mangyanpicture").style.boxShadow = "0px 0px 0px rgba(0, 0, 0, 0)";
+			document.getElementById("whiteislandpicture").style.boxShadow = "0px 0px 0px rgba(0, 0, 0, 0)";
+			document.getElementById("devmountainpicture").style.boxShadow = "0px 0px 0px rgba(0, 0, 0, 0)";
+			document.getElementById("aromapicture").style.boxShadow = "0px 0px 0px rgba(0, 0, 0, 0)";
+			}, 100);
+			document.getElementById("ContentText").innerHTML = "The Mangyan are a native group in the Philippines, particularly in Mindoro. <br>They have a rich culture and traditions, including weaving and music, and live closely connected to the land. <br>Despite modern challenges, they maintain their unique identity and contribute to Filipino culture.";
+
+		}
+		function clearBoxShadow() {
+    document.getElementById("aromapicture").style.boxShadow = "none";
+    document.getElementById("devmountainpicture").style.boxShadow = "none";
+    document.getElementById("whiteislandpicture").style.boxShadow = "none";
+    document.getElementById("mangyanpicture").style.boxShadow = "none";
+}
+	</script>
+</head>
+<body>
+	<!--Navigation and Logo -->
+<div class="navholder">
+	<image class="pageLogo" src = "Pictures/LOGO.png"></image>
+	<h2 class="pageNAmeNav">Explore SanJose</h2>
+	<div class="navigation">
+	<button class="ActiveNav">Home</button>
+	<button class="navbutton" onclick="window.location.href='Shop2.html'">Shop</button>
+	<button class="navbutton" onclick="window.location.href='About2.html'">About</button>
+</div>
+</div>
+<!--tagline for added design-->
+<p class="HomePagetagline">Your Gateway to Exploring <br>Our Province's Hidden Marvels.</p>
+<p class="locationtext" onclick="window.open('https://g.co/kgs/Xw55MC3')">San Jose, Occidental Mindoro...</p>
+	<div id="currentdisplay">
+			<!-- Content or background image will be displayed here -->
+			<p id="ContentText">Aroma Beach is a peaceful spot with soft sand, clear water, and a fresh ocean breeze.<br> Relax as gentle waves meet the shore and enjoy the delightful scent of the sea. <br>It's the perfect place to unwind and escape the daily grind especially when the sun is setting.</p>
+		</div>
+		<div class="otherContents">
+			<!--available content -->
+			<img id="aromapicture" src="Pictures/aromabeach.jpg" onclick="change1()">
+			<img id="devmountainpicture" src="Pictures/devilsmountain.jpg" onclick="change2()">
+			<img id="whiteislandpicture" src="Pictures/whiteisland.jpg" onclick="change3()">
+			<img id="mangyanpicture" src="Pictures/mangyan.jpg" onclick="change4()">
+			<img id="naibuanpicture" src="Pictures/naibuan.jpg" onclick="change5()">
+		</div>
+		<footer>Programmed and Created by: <p class="nameko">David Kian Delas Alas Prado</p><footer>
+</body>
+</html>
